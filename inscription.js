@@ -15,26 +15,26 @@ connection.connect();
 
 const nouvJoueur = { nom: name, couriel: email, equipe: team };
 
-function insrt(nouvJoueur) {
-    if (nouvJoueur.equipe = mauve) {
+function insert(nouvJoueur) {
+    if (nouvJoueur.equipe = 'mauve') {
         connection.query('INSERT INTO mauve SET ?', nouvJoueur, (error, results, fields) => {
             if (error) throw error;
             console.log('Nouvel enregistrement inséré avec succès.');
         });
     };
-    if (nouvJoueur.equipe = blanc) {
+    if (nouvJoueur.equipe = 'blanc') {
         connection.query('INSERT INTO blanc SET ?', nouvJoueur, (error, results, fields) => {
             if (error) throw error;
             console.log('Nouvel enregistrement inséré avec succès.');
         });
     };
-    if (nouvJoueur.equipe = rose) {
+    if (nouvJoueur.equipe = 'rose') {
         connection.query('INSERT INTO rose SET ?', nouvJoueur, (error, results, fields) => {
             if (error) throw error;
             console.log('Nouvel enregistrement inséré avec succès.');
         });
     };
-    if (nouvJoueur.equipe = brun) {
+    if (nouvJoueur.equipe = 'brun') {
         connection.query('INSERT INTO brun SET ?', nouvJoueur, (error, results, fields) => {
             if (error) throw error;
             console.log('Nouvel enregistrement inséré avec succès.');
